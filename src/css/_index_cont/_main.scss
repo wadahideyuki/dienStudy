@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*--------------------------------------
+ メインコンテンツ
+---------------------------------------*/
+
+$name: "main";
+$thisPath: $pathImg + $name + "/";
+
+article:not(.#{$name}Zone){
+//  display: none;
+}
+.#{$name}Zone{
+  
+}

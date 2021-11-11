@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*--------------------------------------
+ cont1
+---------------------------------------*/
+
+$name: "cont1";
+$thisPath: $pathImg + $name + "/";
+
+article:not(.#{$name}Zone){
+//  display: none;
+}
+.#{$name}Zone{
+  
+}
