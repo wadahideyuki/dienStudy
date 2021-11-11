@@ -11,5 +11,44 @@ article:not(.#{$name}Zone){
 //  display: none;
 }
 .#{$name}Zone{
-  
+    .now{
+        border-bottom: 1px solid#231212;
+    }
+    .ad1{
+        margin: 30px 30px;
+    }
+    .ad2{
+        margin: 30px 30px;
+    }
+    .ad3{
+        margin: 30px 30px;
+    }
+    .ad4{
+        margin: 30px 30px;
+    }
+    .now1{
+        color: rgb(190, 136, 54);
+    }
+    .now2{
+        color: rgb(190, 136, 54);
+    }
+    .now3{
+        color: rgb(190, 136, 54);
+    }
+    .now4{
+        color: rgb(190, 136, 54);
+    }
+    .now5{
+        color: rgb(190, 136, 54);
+    }
+    .now6{
+        color: rgb(190, 136, 54);
+    }
+    .now7{
+        color: rgb(190, 136, 54);
+    }
+    .now8{
+        display: flex;
+        margin: 30px 0;
+    }
 }
