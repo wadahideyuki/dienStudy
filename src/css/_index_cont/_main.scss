@@ -11,44 +11,34 @@ article:not(.#{$name}Zone){
 //  display: none;
 }
 .#{$name}Zone{
-    .now{
-        border-bottom: 1px solid#231212;
+  .u-inner{
+    .mainTop{
+      width: 1080px;
+      margin: 0 auto;
     }
-    .ad1{
-        margin: 30px 30px;
-    }
-    .ad2{
-        margin: 30px 30px;
-    }
-    .ad3{
-        margin: 30px 30px;
-    }
-    .ad4{
-        margin: 30px 30px;
-    }
-    .now1{
-        color: rgb(190, 136, 54);
-    }
-    .now2{
-        color: rgb(190, 136, 54);
-    }
-    .now3{
-        color: rgb(190, 136, 54);
-    }
-    .now4{
-        color: rgb(190, 136, 54);
-    }
-    .now5{
-        color: rgb(190, 136, 54);
-    }
-    .now6{
-        color: rgb(190, 136, 54);
-    }
-    .now7{
-        color: rgb(190, 136, 54);
-    }
-    .now8{
+      h1{
+        margin: 45px 0;
+        font-size: 1.5em;
+        color: chocolate;
+      }
+      .imeji {
         display: flex;
-        margin: 30px 0;
+      }
+    .mainBottom{
+      width: 1300px;
+      margin-top: 50px;
+      background-color: rgb(221, 184, 157);
+      .pageLeft{
+        h2{
+          font-size: 1.3em;
+          width: 1080px;
+          margin: 0 auto;
+        .ad{
+        display: flex;
+        flex-wrap: wrap;
+        }
+        }
+      }
     }
+  }
 }
