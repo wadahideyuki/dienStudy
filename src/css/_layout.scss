@@ -33,39 +33,65 @@
     }
   }
   .sx{
-    background-color: darkgray;
+    background-color: #F0EFEC;
     margin: 30px 0 0 ;
   .headerBottom{
     display: flex;
     width: 1080px;
     margin: 0 auto;
-    background-color: darkgray;
+    background-color: #F0EFEC;
+    align-items: center;
     .category{
-      padding:0 50px;
+      padding:13px 52px;
       color: cornsilk;
       background-color: chocolate;
       box-sizing: border-box;
       }
       dl.fontSize{
         display: flex;
-        margin-left:15px;
+        margin-left:20px;
       }
         dd{
           margin-left: 2em;
+          display: flex;
         }
           span.btn.normal{
             padding: 0 5px;
-            background-color: rgb(20, 20, 20);
+            background-color: #505050;
             color: white;
+            width: 42px;
+            display: block;
+            text-align: center;
+
+            border-radius: 50px;
         }
           span.btn.big{
-            margin-left: 2em;
+            margin-left: 8px;
             padding: 0 5px;
             background-color: white;
-            color: black;
+            width: 42px;
+            border-radius: 50px;
+            color: #9F9F9F;
+            display: block;
+            text-align: center;
           }
       .name{
         margin-left: auto;
+        font-size: 1.4rem;
+        font-weight: 500;
+        display: flex;
+        .btn{
+          margin-left: 23px;
+          display: flex;
+          justify-content: center;
+          font-size: 1.2rem;
+          align-items: center;
+          background-color:#DDDBD6 ;
+          border-radius: 50px;
+          width: 87px;
+          text-align: center;
+          height: 22px;
+        }
       }
     }
   }
