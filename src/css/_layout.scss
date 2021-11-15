@@ -96,10 +96,26 @@
     }
   }
 }
-.l-footer {
-  margin-top: 50px;
+
+
+.last{
+  background-color:#F7E8D6 ;
+  ul.last-Href{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding:32.8px 0px 32.8px 0px ;
+    font-size: 1.4rem;
+    color: #4D4D4D;
+    li{
+      margin-left: 40px;
+    }
+  }
+    }
+footer.l-footer{
+  font-size: 1.2rem;
+  color: #E3891F;
+  background-color: #FFFFFF;
   text-align: center;
-  color: rgb(163, 107, 39);
-  padding: 20px;
-  background-color: rgb(65, 88, 129);
+  padding: 12px 0 12px 0;
 }

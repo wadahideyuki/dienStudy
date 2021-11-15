@@ -4,12 +4,58 @@
  cont1
 ---------------------------------------*/
 
-$name: "cont1";
-$thisPath: $pathImg + $name + "/";
+$name    : "cont1";
+$thisPath: $pathImg+$name+"/";
 
-article:not(.#{$name}Zone){
-//  display: none;
+article:not(.#{$name}Zone) {
+  //  display: none;
 }
-.#{$name}Zone{
-  
+
+.#{$name}Zone {
+  .u-inner2 {
+    margin: 30px 0 ;
+    width:1080px;
+    margin:  0 auto;
+    ul.TopMain {
+      font-size: 1.3rem;
+      display: flex;
+      margin-bottom: 30px;
+      justify-content: flex-end;
+      li{
+        span.toppage{
+          color: chocolate;
+        }
+        span.next{
+          margin-left: 10px;
+        }
+      }
+    }
+    h2{
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: #4D4D4D;
+      margin-bottom: 19px;
+    }
+    ul.listItem{
+      display: flex;
+      margin-bottom: 19px;
+      font-size: 1.4rem;
+      color:#4A4A4A ;
+      flex: start;
+      flex-wrap: wrap;
+      li{
+        a{
+          margin-right: 20px;
+          display: flex;
+          justify-content: space-between;
+          width: 240px;
+          padding-bottom:14px ;
+          border-bottom: 1px solid#E3891F;
+          &::after{
+            content:"○";
+          }
+        }
+      }
+  }
+  }
 }
