@@ -11,6 +11,10 @@
     width: 1080px;
     margin: 0 auto;
     align-items: center;
+    @media screen and (max-width: 767px){
+      width: 100%;
+      display: none;
+    }
     .search{
       width: 440px;
       margin-left: 100px;
@@ -41,6 +45,10 @@
     margin: 0 auto;
     background-color: #F0EFEC;
     align-items: center;
+    @include mq{
+      width: 100%;
+      display: none;
+    }
     .category{
       padding:13px 52px;
       color: cornsilk;

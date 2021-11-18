@@ -14,6 +14,9 @@ article:not(.#{$name}Zone){
   .u-inner{
     width: 1080px;
     margin: 0 auto;
+    @include mq{
+      width: 100%;
+    }
     .mainTop{
     }
       h1{
@@ -25,8 +28,14 @@ article:not(.#{$name}Zone){
       .recommentList {
         display: flex;
         justify-content: space-between;
+        @include mq{
+          flex-wrap: wrap;
+        }
         li{
           width: 180px;
+          @include mq{
+            width: 45%;
+          }
           img{
             margin-bottom: 10px;
           }
@@ -57,6 +66,9 @@ article:not(.#{$name}Zone){
       padding-top: 50px;
       padding-bottom: 30px;
       background-color: #FAF2E8;
+      @include mq{
+        width: 100%;
+      }
       .u-inner{
         display: flex;
         justify-content: space-between;
@@ -79,11 +91,17 @@ article:not(.#{$name}Zone){
           justify-content: space-between;
           width: 440px;
           margin: 0 auto;
+          @include mq{
+            flex-wrap: wrap;
+          }
           li{
             justify-content: space-between;
             width: 209px;
             height: 123px;
             margin: 0 0 27px 0;
+            @include mq{
+              width: 45%;
+            }
           }
           }
         }

@@ -7,7 +7,7 @@
     li 
       span.next  車いす
   h2  車いす
-  ul.listItem 
+  ul.list-Kategory
     li 
      a 車いす
     li 
@@ -24,4 +24,51 @@
      a 車いす
     li 
       a 車いす
-
+.main-Bot
+  .main-Title
+    .pageTL
+      span.pd 商品を絞り込む
+  .Top-item
+    .fist-List
+      dl
+        dt 239件
+        dd 1〜20件を表示
+      .number
+        span 表示件数
+        select(name="box").T-fist  20件
+        span 並び順
+        select(name="box").T-second  標準
+        span 商品区分
+        select(name="box").T-last  すべて
+  .Bot-item
+    ul.item-List 
+      li
+        img(src="/common/img/item.png", alt="item")
+        p 商品名が入ります商品名が入ります
+        .dolla 
+          span.Left 3,000円
+          span.Right 在庫なし
+        .item-kategory
+          span 買い物かごに追加
+      - for(var i = 0;i<11;i++)
+        li
+          img(src="/common/img/item.png", alt="item")
+          p 商品名が入ります商品名が入ります
+          .dolla 
+            span.Left 3,000円
+            span.Right-Have 在庫あり
+          .item-kategory
+            span 買い物かごに追加
+  .main-Last 
+    ul 
+      li.here
+        .one
+          a(href="#") 1
+      li
+        .two
+          a(href="#") 2
+      li
+        .three
+          a(href="#") 3
+        
+        
