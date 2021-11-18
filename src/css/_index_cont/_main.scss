@@ -14,8 +14,10 @@ article:not(.#{$name}Zone){
   .u-inner{
     width: 1080px;
     margin: 0 auto;
+    box-sizing: border-box;
     @include mq{
       width: 100%;
+      box-sizing: border-box;
     }
     .mainTop{
     }
@@ -25,16 +27,35 @@ article:not(.#{$name}Zone){
         font-weight: bold;
         color: $mainColor;
       }
+      .btnMore{
+        display: none;
+        @include mq{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #4D4D4D;
+          color: #FFF;
+          border-radius: 50px;
+          width: 129px;
+          height: 36px;
+          margin: 18px auto 0 auto;
+        }
+      }
       .recommentList {
         display: flex;
         justify-content: space-between;
         @include mq{
           flex-wrap: wrap;
+          box-sizing: border-box;
+          width: 100%;
         }
         li{
           width: 180px;
           @include mq{
-            width: 45%;
+            width: 47%;
+            &:nth-child(n + 3){
+              display: none;
+            } 
           }
           img{
             margin-bottom: 10px;
@@ -66,25 +87,40 @@ article:not(.#{$name}Zone){
       padding-top: 50px;
       padding-bottom: 30px;
       background-color: #FAF2E8;
+      
       @include mq{
         width: 100%;
+        padding-top: 35px;
+      }
+      h2{
+        font-size: 1.8rem;
+        font-weight: bold;
+        border-bottom: 2px solid#F1F1F1;
+        margin-bottom: 19px;
+        padding-bottom: 15px;
+        color: #4D4D4D;
+        @include mq{
+          padding: 0px 0px 10px 0px;
+          margin: 0px 0 25px 0;
+        }
       }
       .u-inner{
         display: flex;
         justify-content: space-between;
+        @include mq{
+          display: block;
+        }
       }
       .pageLeft{
         background-color: #FFFF;
         width: 510px;
-        h2{
-          padding-left: 26px;
-          margin:  35px;
-          font-size: 1.8rem;
-          font-weight: bold;
-          border-bottom: 2px solid#F1F1F1;
-          padding-bottom: 19px;
-          color: #4D4D4D;
+        box-sizing: border-box;
+        padding: 25px 30px;
+        @include mq{
+          width: 100%;
+          margin-bottom: 34px;
         }
+        
         ul.ad{
           display: flex;
           flex-wrap: wrap;
@@ -93,6 +129,8 @@ article:not(.#{$name}Zone){
           margin: 0 auto;
           @include mq{
             flex-wrap: wrap;
+            width: 100%;
+            box-sizing: border-box;
           }
           li{
             justify-content: space-between;
@@ -100,7 +138,9 @@ article:not(.#{$name}Zone){
             height: 123px;
             margin: 0 0 27px 0;
             @include mq{
-              width: 45%;
+              width: 47%;
+              height: auto;
+              margin: 0px 0px 20px 0px;
             }
           }
           }
@@ -108,14 +148,26 @@ article:not(.#{$name}Zone){
       }
       .background-ad{
         background-color: #FFFF;
-        padding-bottom: 30px;
         width: 510px;
+        padding: 25px 30px;
+        box-sizing: border-box;
+        @include mq{
+          width: 100%;
+          margin-bottom: 34px;
+        }
+        @include mq{
+          width: 100%;
+        }
         .pageRight-Top{
           display: flex;
-          border-bottom: 2px solid#F1F1F1;
-          padding: 26px;
-          color: #4D4D4D;
-          margin: 0 35px 22.5px;
+          justify-content: space-between;
+          @include mq{
+            width: 100%;
+            span{
+              width: 50%;
+              flex-shrink: 0;
+            }
+          }
           h3{
             font-size:1.8rem ;
             font-weight: bold;
@@ -128,15 +180,20 @@ article:not(.#{$name}Zone){
             color: #FFFFFF;
             border-radius: 30px;
             margin-left: 180px;
+            @include mq{
+              margin-left: 0px;
+              flex-shrink: 0px;
+              width: 138px;
+            }
           }
           }
           ul.text-list{
             line-height: 2em;
             font-size: 1.4rem;
             li{
+              padding: 5px 0;
               span.date{
                 color: chocolate;
-                margin-left:37px ;
               }
               span.text{
                 margin-left:30px ;
